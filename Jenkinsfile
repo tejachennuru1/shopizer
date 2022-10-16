@@ -4,7 +4,7 @@ pipeline {
         stages {
             stage('vcs'){
                 steps {
-                    git branch: devoper,
+                    git branch: develop,
                         url   : 'https://github.com/tejachennuru1/shopizer.git' 
                 }
             }
