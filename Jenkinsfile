@@ -5,12 +5,12 @@ pipeline {
             stage('vcs'){
                 steps{
                     git branch: devoper,
-                        url   : 'https://github.com/tejachennuru1/devolp.git' 
+                        url   : 'https://github.com/tejachennuru1/shopizer.git' 
                 }
             }
             stage('build'){
                 steps {
-                    sh '/usr/bin/mvn package'
+                    sh 'mvn package'
                 }
             }
         }
